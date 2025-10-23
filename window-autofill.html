@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p><button id="button1">Open fill.dev form (new window)</button></p>
+        <p><button id="button2">Open fill.dev form (this window)</button></p>
+        <script>
+            document.getElementById("button1").onclick = function () {
+                window.open("https://fill.dev/form/identity-simple");
+            };
+            document.getElementById("button2").onclick = function () {
+                document.location = "https://fill.dev/form/identity-simple";
+            };
+        </script>
+    </body>
+</html>
